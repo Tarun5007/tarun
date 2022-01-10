@@ -1,0 +1,114 @@
+*{
+   margin: 0px;
+   padding: 0%;
+   box-sizing: border-box;
+
+}     
+.title{
+    word-spacing: 1mm;
+    font-stretch: normal;
+    color: midnightblue;
+    text-align: left;
+    font-size: 2cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+.filter{
+    margin-top: 20px;
+    margin-bottom: 30px; 
+
+}
+.search{
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.select{
+    margin-bottom: 10px;
+}
+.cost{margin-top: 10px;
+}
+.sort{
+    margin-top: 10px;
+}
+
+.list a{
+    table-layout: inherit;
+    color: grey;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-image: initial;
+    border-radius: 15px;
+    margin: 2px;
+    margin-top: 40px;
+} 
+.select{
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(4, 33, 95);
+    border-image: initial
+}
+.card{
+    width: 400px;
+   
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 150px 150px 100px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 40px;
+    background: rgb(240, 241, 231);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    
+}
+.card-text{
+    grid-area: text;
+    margin: 15px;
+}
+.card-text .date {
+    color:rgb(124, 6, 21);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+.card-text p {
+    color: rgb(22, 1, 1);
+    font-size: 25px;
+    font-weight: 30px;
+    
+}
+.card-text h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 900;
+    word-spacing: 5px;
+}
+.card-stats {
+    font-size: 20px;
+    
+    font-weight: bolder;
+    grid-area:inherit;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 30px;
+    background: rgb(241, 224, 145);
+}
+
+.card:hover{
+    transform: scale(1.15);
+    box-shadow:tomato;
+}
+.card {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 30px;
+}
